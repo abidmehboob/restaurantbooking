@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:restaurant-booking
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+    jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+      hibernate:
+        ddl-auto: none
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+      properties:
+        hibernate:
+          show-sql: true
+          format_sql: true
